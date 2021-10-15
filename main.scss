@@ -91,9 +91,24 @@ main{
   height: 500px;
 
   .title{
+    @include ft-en-demi;
+    
     margin-top: 80px;
+    margin-bottom: 0%;
     margin-left: 140px;
-    color: red;
+    font-size: 65px;
+    
+  }
+
+  .sub-title{
+    margin-left: 140px;
+    font-size: 20px;   
+  }
+
+  .image-header{
+    width: 100%;
+    
+
   }
 
 }

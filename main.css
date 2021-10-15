@@ -74,9 +74,24 @@ main {
 }
 
 main .title {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333333;
+  font-size: 16px;
   margin-top: 80px;
+  margin-bottom: 0%;
   margin-left: 140px;
-  color: red;
+  font-size: 65px;
+}
+
+main .sub-title {
+  margin-left: 140px;
+  font-size: 20px;
+}
+
+main .image-header {
+  width: 100%;
 }
 
 footer {
