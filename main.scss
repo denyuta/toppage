@@ -85,9 +85,30 @@ header{
   }
 }
 
+/*コメント*/
+
 main{
   height: 500px;
+
+  .title{
+    top: 184px;
+left: 140px;
+width: 246px;
+height: 84px;
+text-align: left;
+font: normal normal normal 65px/93px Futura PT;
+letter-spacing: 1.63px;
+color: #333333;
+opacity: 1;
+
+  }
+
 }
+
+
+
+
+
 
 footer{
   display: flex;
