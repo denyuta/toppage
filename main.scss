@@ -1,0 +1,136 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+$text-black: #333333;
+$text-grey: #5d5d5d;
+
+@mixin ft-en-demi($color: $text-black, $size: 16px) {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;;
+  color: $color;
+  font-size: $size;
+}
+@mixin ft-en-midi($color: $text-black, $size: 16px) {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: $color;
+  font-size: $size;
+}
+@mixin ft-en-solid($color: $text-black, $size: 16px) {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $color;
+  font-size: $size;
+}
+@mixin ft-ja($weight: bold, $color: $text-black, $size: 16px) {
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  color: $color;
+  font-size: $size;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 40px 36px 50px;
+  .header-logo{
+    padding: 2px 0;
+    &__link{ 
+      img{
+        height: 36px;
+      }
+    }
+  }
+  .nav{
+    display: flex;
+    &__list{
+      .list{
+        list-style: none;
+        display: flex;
+        padding: 13px 0;
+       &__item{
+          display: inline-block;
+          margin-right: 38px;
+          font-size: 16px;
+          a{
+            @include ft-ja();
+            text-decoration: none;
+          }
+        }
+      } 
+    }
+    &__contact-button{
+      .contact-button{
+        height: 44px;
+        width: 158px;
+        background-color: #FF9300;
+        border-radius: 22px;
+        border: none;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+main{
+  height: 500px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 140px;
+  .footer-logo{
+    height: 137px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    &__img{
+      img{
+        width: 275px;
+      }
+    }
+    &__address{
+      @include ft-ja($weight: 100);
+      line-height: 24px;
+    }
+  }
+  .footer-nav{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    &__list{
+      .list{
+        display: flex;
+        &__item{
+          display: inline-block;
+          margin-left: 30px;
+          a{
+            @include ft-ja();
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &__copywiter{
+      .copywiter{
+        @include ft-en-midi($color: $text-grey, $size: 14px);
+        text-align: end;
+      }
+    }
+
+  }
+}
